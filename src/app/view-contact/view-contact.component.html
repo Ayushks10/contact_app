@@ -1,0 +1,16 @@
+<div class="d-flex justify-content-center align-items-center mt-5">
+    <div class="col-lg-4 d-flex justify-content-center">
+        <div class="card align-items-center p-2" style="width: 30rem;">
+            <img width="150px" height="150px" [src]="contact.photo" alt="userimg">
+            <div class="card-body text-center">
+                <h3 class="card-title"> {{contact.name}} </h3>
+                <h5><i class="fa-solid fa-id-badge"></i>: {{contact.id}} </h5>
+                <h5><i class="fa-solid fa-mobile"></i>: {{contact.mobile}} </h5>
+                <h5><i class="fa-solid fa-envelope"></i>: {{contact.email}} </h5>
+                <h5><i class="fa-solid fa-building"></i>: {{contact.company}} </h5>
+                <h5>Title: {{contact.title}}</h5>
+                <h5>Group: {{group}} </h5>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,72 @@
+
+
+
+                                    Angluar - Front end Development
+                                ---------------------------------------
+
+                                    Basic Commands In Angluar
+                                ---------------------------------------
+
+                            1. To create an Angular project : ng new project-name
+                            2. To run an Angular project: ng serve
+                            3. To generate component ng g c component-name
+                            4. To generate Service : n g s  Service-folder/Service-name
+                            5. To generate build : ng build (create a folder with name dist)
+                            6. deplyo netlify using dist folder - dist folder from project folder
+                            7. To generate userdefined pipe: ng g p pipe-folder/pipe-name                                                     
+
+                                    Basic Concepts In Angluar
+                                ---------------------------------
+
+                            1. Module - To import 3rd party libraries, also used to hold components, Root Module : AppModule
+                            2. Component - html,css,ts, also have a selector, Root Component : AppComponent
+                            3. Selector - to replace Selector tag with its html page
+                            4. Decorator - To hold meta data, starts with @
+                            5. Set up path for component - to view component in another webpage
+                                - Use app.routingmodule.ts file
+                                - Use router-outlet selector in root component(AppComponent) - To navigate according to the user requested path
+                            6. Data Binding : data sharing within a component
+                                6.1 One way Binding : data sharing in one direction
+                                    6.1.1 ts (component) to html file (view)
+                                        6.1.1.1 String Interpolation : {{class property-name}}
+                                        6.1.1.2 property binding : [attribute-name]="property-name"
+                                    6.1.2 html (view) to ts (component)
+                                        6.1.2.1 Event binding : (event-name)="function call"
+                                        6.1.2.2 Event binding using $event : (event-name)="function call($event)"
+                                        6.1.2.3 Event binding using template reference variable: #variable-name
+                                6.2 Two way binding : data sharing in both direction
+                                    6.2.1 ngModel: Import FormsModule in AppModule
+                                            [(ngModel)]="class property"
+                            7. Angluar Forms
+                                7.1 template driven Forms
+                                7.2 Model driven Forms 
+                            8. Dependency Injections: To share data between dependent classes
+                                - constructor(access-specifier variable-name:class name){ }
+                            9. Angluar Services : To share common logic with components
+                            10. Angluar Directives : DOM manipulation
+                                10.1 Component Directive
+                                10.2 Structural Directive
+                                    - *ngIf = "condition"
+                                    - *ngFor = "let variable-name of array-name"
+                                10.3 Attribute Directive: to apply style to html elements
+                                    - ngClass 
+                            11. Parent child data sharing
+                                - child to parent communication : @Output Decorator
+                                - parent to child communication : @Input Decorator
+                            12. Asyncronus function handling in Angluar
+                                - Using RxJS (Reactive Extentions for Javascript)
+                                - resolve state: subscribe(observer:callback)
+                                    - observer ca be next : required, where we get 200 response code
+                                    - error optional to get all http response error
+                                - reject state:  catchError(callback)
+                                    - error():to get error response when you subscribe it
+                            13. Api call using Angular: HttpClient class - have all http methods
+                                - Import HttpClientModule in AppModule
+                            14. ActivatedRoute: Provides access to information about a route associated with a component that is loaded in an outlet
+                            15. Pipes: To transform strings, currency amounts, dates, and other data for display.
+                                        syntax:
+                                        {{ value_expression | date [ : format [ : timezone [ : locale ] ] ] }}
+
+
+            
+
